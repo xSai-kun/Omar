@@ -1,21 +1,21 @@
-const discord = require ('discord.js');
+const Discord = require('discord.js');
 
-var client = new discord.Client();
+const client = new Discord.Client();
 
-const token = process.env.TOKEN;
+var prefix = "/";
+var randnum = 0;
 
-client.on ("ready", () => {
+client.login(process.env.TOKEN);
+
+client.on("ready", () => {
     console.log("Je suis prêt !")
     client.user.setGame("construire notre royaume de sable.")
 });
 
-const prefix = "/";
-client.on ("message", (message) => {
+client.on('message', message => {
 
-   if (message.author.bot) return;
-
-   if (message.content.startsWith (prefix + "aide")) {
-       message.reply ('var help_embed = new Discord.RichEmbed()
+    if(message.content === prefix + "Aide"){
+        var help_embed = new Discord.RichEmbed()
         .setColor("#0099FF")
         .setTitle("Voici mes commandes d'aide")
         .setDescription("Je suis Omar.")
@@ -28,4 +28,14 @@ client.on ("message", (message) => {
         .setFooter ("Menu d'aide -  Omar.")
         message.channel.sendMessage(help_embed);
         console.log("Un utilisateur a affiché les commandes du bot")
-    )}
+    }
+
+    if (message.content === "/Bonjour"){
+        message.reply("Bonjour !");
+    console.log('Le bot dit bonjour');
+  }
+    
+    if (message.content === "/Hey !"){
+        message.reply("arrive dans un magnifique spectacle son et lumières qui se finit sur un énorme feu d'artifice !!");
+    console.log('Le bot dit bonjour');
+  }
