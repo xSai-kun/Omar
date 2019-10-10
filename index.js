@@ -31,7 +31,7 @@ client.on('message', message => {
     }
 
     if (message.content === "/certes"){
-        message.reply({file: ["./images/Sai certes.png"]});
+        message.reply({files: ["./images/Sai certes.png"]});
     console.log('Le bot accorde un fait.');
   }
     
