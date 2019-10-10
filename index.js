@@ -31,27 +31,27 @@ client.on('message', message => {
     }
 
     if (message.content === "/certes"){
-        message.reply({file: ["Sai certes.png"]});
+        message.reply({file: ["./images/Sai certes.png"]});
     console.log('Le bot accorde un fait.');
   }
     
     if (message.content === "/pk"){
-        message.reply({file: ["Sai Péka moa.png"]});
+        message.reply({file: ["./images/Sai Péka moa.png"]});
     console.log('Le bot se questionne.');
   }
       
   if (message.content === "/meh"){
-        message.reply({file: ["Sai - Meh.png"]});
+        message.reply({file: ["./images/Sai - Meh.png"]});
     console.log('Le bot est dubitatif.');
   }
 
   if (message.content === "/nanithefuck"){
-        message.reply({file: ["Nani the fuck.png"]});
+        message.reply({file: ["./images/Nani the fuck.png"]});
     console.log('Le bot ne comprend pas.');
   }
   
   if (message.content === "/bonnesintentions"){
-        message.reply({file: ["Bonnes intentions.jpg"]});
+        message.reply({file: ["./images/Bonnes intentions.jpg"]});
     console.log('Le bot fait des supositions.');
   }
     
