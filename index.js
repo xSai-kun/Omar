@@ -31,28 +31,28 @@ client.on('message', message => {
     }
 
     if (message.content === "/certes"){
-        message.reply("Bonjour !");
-    console.log('Le bot dit bonjour');
+        message.reply({file: ["Sai certes.png"]});
+    console.log('Le bot accorde un fait.');
   }
     
     if (message.content === "/pk"){
-        message.reply("arrive dans un magnifique spectacle son et lumières qui se finit sur un énorme feu d'artifice !!");
-    console.log('Le bot dit bonjour');
+        message.reply({file: ["Sai Péka moa.png"]});
+    console.log('Le bot se questionne.');
   }
       
   if (message.content === "/meh"){
-        message.reply("**lance un chat sur Gilbert** :cat: :cat: :cat:");
-    console.log('Le bot lance un chat');
+        message.reply({file: ["Sai - Meh.png"]});
+    console.log('Le bot est dubitatif.');
   }
 
   if (message.content === "/nanithefuck"){
-        message.reply("Oups, Andrew a encore oublié un dossier important :facepalm:");
-    console.log('Le bot perd un dossier');
+        message.reply({file: ["Nani the fuck.png"]});
+    console.log('Le bot ne comprend pas.');
   }
   
   if (message.content === "/bonnesintentions"){
-        message.reply("Athanase te demande ce que tu fous. Il n'a pas l'air d'apprécier ton câlin...");
-    console.log('Le bot fait un câlin.');
+        message.reply({file: ["Bonnes intentions.jpg"]});
+    console.log('Le bot fait des supositions.');
   }
     
 });
