@@ -36,22 +36,22 @@ client.on('message', message => {
   }
     
     if (message.content === "/pk"){
-        message.reply({file: ["./images/Sai Péka moa.png"]});
+        message.reply({files: ["./images/Sai Péka moa.png"]});
     console.log('Le bot se questionne.');
   }
       
   if (message.content === "/meh"){
-        message.reply({file: ["./images/Sai - Meh.png"]});
+        message.reply({files: ["./images/Sai - Meh.png"]});
     console.log('Le bot est dubitatif.');
   }
 
   if (message.content === "/nanithefuck"){
-        message.reply({file: ["./images/Nani the fuck.png"]});
+        message.reply({files: ["./images/Nani the fuck.png"]});
     console.log('Le bot ne comprend pas.');
   }
   
   if (message.content === "/bonnesintentions"){
-        message.reply({file: ["./images/Bonnes intentions.jpg"]});
+        message.reply({files: ["./images/Bonnes intentions.jpg"]});
     console.log('Le bot fait des supositions.');
   }
     
